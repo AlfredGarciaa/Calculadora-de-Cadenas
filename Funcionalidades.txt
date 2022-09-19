@@ -11,3 +11,7 @@ Por ejemplo, los siguientes casos de prueba:
 - (7ª TDD) No toma en cuenta cadenas de numeros mayores a 1000
 - (8ª TDD) Calcula suma de la cadena con identificadores de cualquier longitud
 - (9ª TDD) Calcula suma de la cadena con multiples identificadores especificos
+
+1) Ingresar cadena .-area para celda de texto.
+2) boton "Calcular" .-suma la cadena ingresada y lo muestra.
+3) Visualizacion con CSS .-se resaltara titulo y se añadira imagen.
