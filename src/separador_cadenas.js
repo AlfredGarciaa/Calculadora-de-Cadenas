@@ -1,9 +1,11 @@
-function get_separator(cadena){
-  var cadenaArray;
+function get_separator(cadena) {
+  var cadenaArray = cadena.split(/[[\s]+/), num = cadenaArray.length - 1;
+  
+  for (var i = 1; i < cadenaArray.length - 1; i++) {
+    cadenaArray[num] = cadenaArray[num].replaceAll(cadenaArray[i].slice(0, -1), ",");
+  }
 
-  cadenaArray = cadena.split(/[[\n ]+/);
-
-  return splitAdd(cadenaArray[2], cadenaArray[1].slice(0,-1));
+  return splitAdd(cadenaArray[num]);
 }
 
 export {get_separator};

@@ -1,16 +1,11 @@
-function splitAdd(cadena, separador){
-  var res = 0;
+function splitAdd(cadena) {
+  var res = 0, cadenaArray = cadena.split(/[,-]+/);
 
-  if(separador != ""){
-    cadena = cadena.replaceAll(separador, ",");
+  for (var i = 0; i < cadenaArray.length; i++) {
+    if (parseInt(cadenaArray[i]) <= 1000)
+      res = res + parseInt(cadenaArray[i]);
   }
-  var cadenaArray = cadena.split(/[[,-]+/);
-
-  for(var i = 0; i < cadenaArray.length ; i++){
-    if( parseInt(cadenaArray[i]) <= 1000)
-    res = res + parseInt(cadenaArray[i]);
-  }
-
+  
   return res;
 }
 
