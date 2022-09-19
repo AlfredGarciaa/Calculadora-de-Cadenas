@@ -40,4 +40,12 @@ describe("!!! CALCULA CADENAS !!!", () => {
   it("deberia retornar 10 al ingresar la cadena //[;] 5;2;1500;3 ", () => {
     expect(calculador("//[;] 5;2;1500;3")).toEqual(10);
   });
+
+  it("deberia retornar 10 al ingresar la cadena //[;] 5;2,1500-3 ", () => {
+    expect(calculador("//[;] 5;2,1500-3")).toEqual(10);
+  });
+  
+  it("deberia retornar 10 al ingresar la cadena //[&%$] 5&%$2,1500-3 ", () => {
+    expect(calculador("//[&%$] 5&%$2,1500-3")).toEqual(10);
+  });
 });
