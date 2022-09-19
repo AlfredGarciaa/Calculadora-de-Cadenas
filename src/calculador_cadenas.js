@@ -1,10 +1,16 @@
 function calculador(cadena) {
-  if(cadena === "")
-  {
-    cadena = "0";
+  var i = 0, res = 0;
+
+  res = parseInt(cadena);
+  if(cadena === ""){
+    res = 0;
   }
+  if(cadena.search(",") != -1) {
+    const cadenaArray = cadena.split(",");
+    res = parseInt(cadenaArray[0]) +  parseInt(cadenaArray[1]);
+  } 
   
-  return parseInt(cadena);
+  return res;
 }
 
 export default calculador;

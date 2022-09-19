@@ -8,4 +8,8 @@ describe("!!! CALCULA CADENAS !!!", () => {
   it("deberia retornar 1 al ingresar la cadena 1 ", () => {
     expect(calculador("1")).toEqual(1);
   });
+
+  it("deberia retornar 2 al ingresar la cadena 1,1 ", () => {
+    expect(calculador("1,1")).toEqual(2);
+  });
 });
