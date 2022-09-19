@@ -1,0 +1,13 @@
+Cuales serían nuestros primeros casos de prueba ???
+Necesitamos pensar en el caso de prueba más simple y continuar a partir del mismo  a pasos muy pequeños.
+Por ejemplo, los siguientes casos de prueba:
+
+- (1ª TDD) Toma en cuenta la cadena vacía: Para una cadena “” -> 0
+- (2ª TDD) Toma en cuenta cadena un solo número: Para una cadena “2” -> 2
+- (3ª TDD) Toma en cuenta cadena con dos números: Para una cadena “1,2” -> 3
+- (4ª TDD) Toma en cuenta cadena con varios números: Para una cadena “1,2,3” -> 6
+- (5ª TDD) Calcula suma de la cadena separada con '-'
+- (6ª TDD) Calcula suma de la cadena separadas con delimitadores especificados
+- (7ª TDD) No toma en cuenta cadenas de numeros mayores a 1000
+- (8ª TDD) Calcula suma de la cadena con identificadores de cualquier longitud
+- (9ª TDD) Calcula suma de la cadena con multiples identificadores especificos
