@@ -24,7 +24,7 @@ describe("!!! CALCULA CADENAS !!!", () => {
   it("deberia retornar 2 al ingresar la cadena 1-1 ", () => {
     expect(calculador("1-1")).toEqual(2);
   });
-
+  
   it("deberia retornar 3 al ingresar la cadena 1-1,1 ", () => {
     expect(calculador("1-1,1")).toEqual(3);
   });
